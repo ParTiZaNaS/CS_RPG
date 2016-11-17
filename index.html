@@ -1,16 +1,684 @@
-
+<!DOCTYPE html>
 <html>
-  <title>
-    Labas
-  </title>
-  
-  <body>
-    ParTiZaNaS`
-  </body>
-  
-  <style>
-    background-color: black;
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="https://dl.dropbox.com/s/w63gmjj1hoyrni7/Forumas.css?dl=0">
+	<link rel="stylesheet" type="text/css" href="https://dl.dropbox.com/s/yj5mjfy35n8c19x/Navigacija.css?dl=0">
+	
+	<link rel="stylesheet" type="text/css" href="Navigacija.css">
+	<link rel="stylesheet" type="text/css" href="Forumas.css">
+
+<style>
+body {
+	margin:0;
+	background-color: rgb(11, 11, 11);
+	font-family: 'Trebuchet MS',Helvetica,Arial,sans-serif;
+    color: rgb(166,166,166);
+    word-wrap: break-word;
+    line-height: 1.28;
+}
+
+p {
+	line-height: 1.0;
+	margin: 0;
+	overflow: hidden;
+}
+
+
+#ribbon {
+		float: right;
+		padding: .34em 1em;
+		margin-right: -11px;
+		position:relative;
+		color: #fff;
+		font-weight: bold;
+		font: 15px;
+		text-align: center;
+		letter-spacing:0.1em;
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
+					inset 0px 0px 20px rgba(0,0,0,0.1),
+					0px 1px 1px rgba(0,0,0,0.4);
+		 background: -webkit-linear-gradient(top,#e60000, #b30000);
+      display: inline-block;
+	}
+	
+#ribbon:before{
+		content: "";
+		width:.2em;
+		bottom:-.5em;
+		position:absolute;
+		display:block;
+		border: .9em solid #e60000;
+		box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+		z-index:1;
+	}
+	
+#ribbon:before {
+		left:-1.35em;
+		border-right-width: .75em;
+		border-left-color:transparent;
+	}
+
+	
+#content:before {
+		content:"";
+		bottom:-.5em;
+		position:absolute;
+		display:block;
+		border-style:solid;
+		border-color: #330000 transparent transparent transparent;
+		z-index:2;
+	}
+	
+#content:before {
+	  left: 0;
+	  border-width: .5em 0 0 .5em;
+	}
+	
+@media screen and (max-width: 1100px) {
+	#ribbon { display:none }
+	#ribbon:before { display:none }
+	#content:before { display:none }
+}
+</style>
+<!-- ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #111; }
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.arrow_box {
+	position: relative;
+	background: #0b0b0b;
+	width: 154px;
+	height: 406px;
+	border: 1px solid rgb(35,35,35);
+	border-radius: 3px;
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 3%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #0b0b0b;
+	border-width: 10px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #c2e1f5;
+	border-width: 10px;
+}
+
+.ID_AVATARAS {
+	background-color: rgb(11,11,11);
+	padding: 10px;
+	border-radius: 3px;
+	text-align: center;
+	position: relative;
+}
+.ID_ParTiZaNaS {
+	font-weight: bold;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    line-height: 18px;
+    text-align: center;
+}
+.ID_TAG {
+	margin: 0 auto;
+	font-size: 11px;
+    padding: 1px 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+	box-shadow: 1px 1px 3px rgba(0,0,0, 0.25);
+    text-align: center;
+}
+.ID_TAG.ID_SPALVA {
     color: white;
-  </style>
-  
+    background-color: royalblue;
+    border-color: #81A9E1;	
+}
+.ID_TAG.ID_SPALVA.ID_PERKELIMAS {
+	border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;	
+}
+.ID_ZENKLIUKAS {
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 7px solid transparent;
+    border-top-color: rgb(127,185,0);
+    border-left-color: rgb(127,185,0);
+	border-top-left-radius: 3px;
+}
+.ID_TITLE {
+    font-size: 12px;
+    padding-bottom: 5px;
+    display: block;
+    text-align: center;
+	color: rgb(166, 166, 166);
+}
+.ID_ZINUTE {
+	height: 373px;
+	width: 100%;
+	word-break: keep-all;
+    padding-top: 0px;
+    padding-bottom: 2px;
+	color: rgb(166, 166, 166);
+	font-size: 14px;
+	line-height: 1.4;
+	display: block;
+}
+
+.ID_BG {
+    background-color: rgb(11, 11, 11);
+    padding: 30px 20px;
+    position: relative;
+	border-radius: 8px;
+	margin: 8%;
+	min-width: 680px;
+}
+.ID_LANGAS {
+    background-color: rgb(20,20,20);
+    border-color: rgb(31,31,31);
+	padding: 10px 10px 30px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(31,31,31);
+    border-top: 1px solid rgb(35,35,35);
+    border-radius: 5px;
+	display: block;
+}
+
+@media screen and (max-width:680px) {
+	.arrow_box {
+		display: block;
+	}
+	.ID_TAG {
+		visibility: hidden;
+	}
+	.ID_ZINUTE {
+		display: block;
+	}
+}
+
+
+
+table {
+    width: 100%;
+    text-align: left;
+    table-layout: fixed;
+}
+
+th, td {
+    word-wrap: break-word;
+	color: white;
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    tbody, thead { float: left; }
+    thead { min-width: 120px }
+    td,th { display: block }
+}
+</style> -->
+</head>
+<body>
+<!--
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul> -->
+
+
+
+<nav id="menu-wrap">    
+	<ul id="menu">
+		<li><a href="/">Namai</a></li>
+
+		<li>
+			<a href="">Kategorijos</a>
+			<ul>
+				<li>
+					<a href="https://dl.dropbox.com/s/xz691siap9d1xe1/Minecrat.html?dl=0">Minecraft</a>
+					<!--<ul>
+						<li><a href="">Item 11</a></li>
+
+						<li><a href="">Item 12</a></li>
+						<li><a href="">Item 13</a></li>
+						<li><a href="">Item 14</a></li>
+					</ul>	-->			
+				</li>
+				<li>
+					<a href="">Grafikos dizainas</a>
+
+					<!--<ul>
+						<li><a href="">Item 21</a></li>
+						<li><a href="">Item 22</a></li>
+						<li><a href="">Item 23</a></li>
+						<li><a href="">Item 24</a></li>
+					</ul> -->				
+				</li>
+
+				<li>
+					<a href="">DEV įrankiai</a>
+					<!--<ul>
+						<li><a href="">Item 31</a></li>
+						<li><a href="">Item 32</a></li>
+						<li><a href="">Item 33</a></li>
+						<li><a href="">Item 34</a></li>
+
+					</ul>	-->			
+				</li>
+				<li>
+					<a href="">Tinklalapių dizainai</a>				
+				<!--	<ul>
+						<li><a href="">Item 41</a></li>
+						<li><a href="">Item 42</a></li>
+						<li><a href="">Item 43</a></li>
+
+						<li><a href="">Item 44</a></li>
+					</ul>	-->
+				</li>
+			</ul>
+		</li>
+	<!--	<li>
+			<a href="">Work</a>
+			<ul>
+
+				<li>
+					<a href="">Work 1</a>
+					<ul>
+						<li>
+							<a href="">Work 11</a>		
+							<ul>
+								<li><a href="">Work 111</a></li>
+								<li><a href="">Work 112</a></li>
+
+								<li><a href="">Work 113</a></li>
+							</ul>							
+						</li>
+						<li>
+							<a href="">Work 12</a>
+							<ul>
+								<li><a href="">Work 121</a></li>
+								<li><a href="">Work 122</a></li>
+
+								<li><a href="">Work 123</a></li>
+							</ul>							
+						</li>
+						<li>
+							<a href="">Work 13</a>
+							<ul>
+								<li><a href="">Work 131</a></li>
+								<li><a href="">Work 132</a></li>
+
+								<li><a href="">Work 133</a></li>
+							</ul>							
+						</li>
+					</ul>					
+				</li>
+				<li>
+					<a href="">Work 2</a>
+					<ul>
+						<li>
+
+							<a href="">Work 21</a>
+							<ul>
+								<li><a href="">Work 211</a></li>
+								<li><a href="">Work 212</a></li>
+								<li><a href="">Work 213</a></li>
+							</ul>							
+						</li>
+
+						<li>
+							<a href="">Work 22</a>
+							<ul>
+								<li><a href="">Work 221</a></li>
+								<li><a href="">Work 222</a></li>
+								<li><a href="">Work 223</a></li>
+							</ul>							
+						</li>
+
+						<li>
+							<a href="">Work 23</a>
+							<ul>
+								<li><a href="">Work 231</a></li>
+								<li><a href="">Work 232</a></li>
+								<li><a href="">Work 233</a></li>
+							</ul>							
+						</li>
+
+					</ul>					
+				</li>
+				<li>
+					<a href="">Work 3</a>
+					<ul>
+						<li>
+							<a href="">Work 31</a>
+							<ul>
+
+								<li><a href="">Work 311</a></li>
+								<li><a href="">Work 312</a></li>
+								<li><a href="">Work 313</a></li>
+							</ul>							
+						</li>
+						<li>
+							<a href="">Work 32</a>
+
+							<ul>
+								<li><a href="">Work 321</a></li>
+								<li><a href="">Work 322</a></li>
+								<li><a href="">Work 323</a></li>
+							</ul>							
+						</li>
+						<li>
+							<a href="">Work 33</a>
+
+							<ul>
+								<li><a href="">Work 331</a></li>
+								<li><a href="">Work 332</a></li>
+								<li><a href="">Work 333</a></li>
+							</ul>							
+						</li>
+					</ul>					
+				</li>
+
+			</ul>		
+		</li> -->
+		<li><a href="">Apie</a></li>
+		<li><a href="">Kontaktai</a></li>
+	</ul>
+</nav>
+<!--
+<div class="ID_LANGAS">
+	<table>
+		<thead>
+			<tr>
+				<td style="background-color: #141414; width: 170px;" >
+					<div class="arrow_box" >
+						<div class="ID_AVATARAS" >
+							<img src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593" style="padding: 2px; border: 1px solid rgb(31,31,31); border-radius: 3px;" >
+						</div>
+						
+						<div class="ID_ZENKLIUKAS" ></div>
+					
+						<div style="padding: 6px;" >
+							<span class="ID_ParTiZaNaS" style="color: DodgerBlue; font-weight: bold;">ParTiZaNaS</span>
+							<span class="ID_TITLE">Developer</span>
+
+							<div class="ID_TAG ID_SPALVA ID_PERKELIMAS" >
+								<strong>Developer</strong>
+							</div>
+						
+							<div class="ID_TAG ID_SPALVA ID_PERKELIMAS" >
+								<strong>[DEV] Jailbreak</strong>
+							</div>
+						</div>
+					</div>
+				</td>
+				
+				<td style="background-color: #141414;" >
+					<div class="ID_ZINUTE">Jailbreak Atnaujinimai aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa
+						<p>Sveiki</p>
+						
+						<div style="border-top: 1px dashed rgb(31,31,31);"></div>
+					</div>
+				</td>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+<br><br><br><br><br><br><br> -->
+
+<div class="Forumas">
+	<div class="Pranesimas">
+		<div class="Vartotojas">
+			<div class="Vartotojas_Laukelis">
+				<div class="Paveikslelis">
+					<img id="Paveikslelis_stilius" src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593">
+				</div>
+				<div class="Informacija">
+					<div class="ParTiZaNaS" id="Administratorius">ParTiZaNaS</div>
+					<div class="Developer">Developer</div>
+					<div class="TAG SAVININKAS">
+						<strong>Developer</strong>
+					</div>
+					<div class="TAG ADMIN KRASTAI">
+						<strong>Minecraft DEV</strong>
+					</div>
+					<div class="TAG ADMIN KRASTAI">
+						<strong>[CS 1.6] Jailbreak DEV</strong>
+					</div>
+					<div class="TAG ADMIN KRASTAI">
+						<strong>[CS 1.6] Base Builder DEV</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Tekstas">
+			<div class="Zinute">
+			Kartais atrodo, kad viena akimirka išgyveni daugybe kartų, bet.. būna ir kartų kada akimirka norėtum patirti daug kartų.
+			</div>
+			<div class="Parasas"></div>
+			<div class="Laikas_dezute">
+				<div class="Laikas">
+					<span>ParTiZaNaS, 2016.07.13</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="Pranesimas">
+		<div id="ribbon">
+			<span id="content">Kepurės</span>
+		</div>
+		<div class="Vartotojas">
+			<div class="Vartotojas_Laukelis">
+				<div class="Paveikslelis">
+					<img id="Paveikslelis_stilius" src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593">
+				</div>
+				<div class="Informacija">
+					<div class="ParTiZaNaS" id="Administratorius">ParTiZaNaS</div>
+					<div class="Developer">Developer</div>
+					<div class="TAG SAVININKAS">
+						<strong>Developer</strong>
+					</div>
+					<div class="TAG ADMIN KRASTAI">
+						<strong>Minecraft DEV</strong>
+					</div>
+					<div class="TAG ADMIN KRASTAI">
+						<strong>[CS 1.6] Jailbreak DEV</strong>
+					</div>
+					<div class="TAG ADMIN KRASTAI">
+						<strong>[CS 1.6] Base Builder DEV</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Tekstas">
+			<div class="Zinute">
+				<p/>Kad wOOw'ą šikanti sutrauktu.
+				<p/>Kad pow3r'is kuo greičiau gautu failus.
+				<p/>Kad LaIkIuX'as greičiau pradėtu dirbti su Minecraft serveriu, nes nedarbas mane varo į neviltį!
+			</div>
+			<div class="Parasas"></div>
+			<div class="Laikas_dezute">
+				<div class="Laikas">
+					<span>ParTiZaNaS, 2016.07.13</span>
+				</div>
+			</div>
+			<div class="Patiko">
+				<span class="LIKE"><a id="LIKE_Vartotojas">DRaFTaS</a>, <a id="LIKE_Vartotojas">Madcat</a>, <a id="LIKE_Vartotojas">wOOw</a> ir <a id="LIKE_Vartotojas">17 kitų</a> pasidalino šiuo straipsniu.</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br><br><br><br><br>
+<!-- <div class="ID_BG">
+<div class="ID_LANGAS">
+  <table>
+      <tr>
+        <td style="background-color: #141414; width: 170px;" >
+			<div class="arrow_box" >
+				<div class="ID_AVATARAS" >
+					<img src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593" style="padding: 2px; border: 1px solid rgb(31,31,31); border-radius: 3px;" >
+				</div>
+				<div class="ID_ZENKLIUKAS" >
+					
+				</div>
+				<div style="padding: 6px;" >
+					<span class="ID_ParTiZaNaS" style="color: DodgerBlue; font-weight: bold;">ParTiZaNaS</span>
+					<span class="ID_TITLE">Developer</span>
+
+					<div class="ID_TAG ID_SPALVA ID_PERKELIMAS" >
+						<strong>Developer</strong>
+					</div>
+					<div class="ID_TAG ID_SPALVA ID_PERKELIMAS" >
+						<strong>[DEV] Jailbreak</strong>
+					</div>
+				</div>
+			</div>
+        </td>
+        <td style="background-color: #141414;" >
+			<div class="ID_ZINUTE">Jailbreak Atnaujinimai aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa
+				<p>Sveiki
+					Visi :D
+				</p>
+				<div style="border-top: 1px dashed rgb(31,31,31);"></div>
+			</div>
+        </td>
+      </tr>
+  </table>
+</div>
+</div> -->
+  <!--    <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="C:/Users/---/Desktop/Kepures/Semantic-UI-master/examples/assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Matthew
+              <div class="sub header">Fabric Design
+            </div>
+          </div>
+        </td>
+        <td>
+          15
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="C:/Users/---/Desktop/Kepures/Semantic-UI-master/examples/assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Lindsay
+              <div class="sub header">Entertainment
+            </div>
+          </div>
+        </td>
+        <td>
+          12
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="ui image header">
+            <img src="C:/Users/---/Desktop/Kepures/Semantic-UI-master/examples/assets/images/wireframe/square-image.png" class="ui mini rounded image">
+            <div class="content">
+              Mark
+              <div class="sub header">Executive
+            </div>
+          </div>
+        </td>
+        <td>
+          11
+        </td>
+      </tr>
+    </tbody> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>
+	function myFunction() { document.getElementsByClassName("topnav")[0].classList.toggle("responsive"); }
+
+    $(function() {
+		if ($.browser.msie && $.browser.version.substr(0,1)<7)
+		{
+		$('li').has('ul').mouseover(function(){
+			$(this).children('ul').css('visibility','visible');
+			}).mouseout(function(){
+			$(this).children('ul').css('visibility','hidden');
+			})
+		}
+
+		/* Mobile */
+		$('#menu-wrap').prepend('<div id="menu-trigger">Meniu</div>');		
+		$("#menu-trigger").on("click", function(){
+			$("#menu").slideToggle();
+		});
+
+		// iPad
+		var isiPad = navigator.userAgent.match(/iPad/i) != null;
+		if (isiPad) $('#menu ul').addClass('no-transition');      
+    });          
+</script>
+</body>
 </html>
