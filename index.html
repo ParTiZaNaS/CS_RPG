@@ -189,8 +189,41 @@
 					display: none;
 				}
 				.MAIN footer {
-					display: none;
+					display: block;
+					width: 100%;
+					margin-right: 1%;
+					margin-top: 5%;
 				}
+				.MAIN footer span {
+					font-family: 'Beyond Wonderland';
+					display: inline-block;
+					width: 100%;
+					text-align: center;
+					font-weight: normal;
+					font-size: 24px;
+					color: #454545;
+					letter-spacing: 1px;
+					line-height: 5px;
+				}
+				.MAIN footer span a {
+					display: inline-block;
+					color: #454545;
+					text-decoration: none;
+					font-weight: bold;
+				}
+				.MAIN footer span a:hover {
+					cursor:pointer;
+				}
+				.MAIN footer span a img {
+					width: 22px;
+					height: 22px;
+					vertical-align: middle;
+					
+					-webkit-filter: grayscale(100%);
+							filter: grayscale(100%);
+				}
+				#MAIN_SPAN_1 { padding-top: 1%; }
+				#MAIN_SPAN_2 { padding-top: 2%; padding-left: 0%; }
 			}
 			@media screen and (min-width: 1080px) {
 				.MAIN {
@@ -328,6 +361,8 @@
 					-webkit-filter: grayscale(100%);
 							filter: grayscale(100%);
 				}
+				#MAIN_SPAN_1 { padding-top: 1%; }
+				#MAIN_SPAN_2 { padding-top: 3%; padding-left: 2%; }
 			}
 		</style>
 
@@ -338,7 +373,7 @@
 					<li>
 						<img class="rotate" src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__BOOK.png" onclick="openCity(event, 'RPG')">
 						<h3 onclick="openCity(event, 'RPG')">RPG</h3>
-						<p>You think you're strong enough to behold the gifts of The Sacred book?</p>					
+						<p>You think you're smart enough to learn The Sacred book?</p>						
 					</li>
 					<li>
 						<img class="rotate" src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__PAPER.png" onclick="openCity(event, 'RPG')">
@@ -354,8 +389,8 @@
 				
 				<footer> 
 					<span>Design by. <a href="https://laikiux.lt/members/partizanas.15/" target="_blank">ParTiZaNaS</a></span>
-					<span style="padding-top: 1%;">Contact with <a href="skype:modestas.lawyer"><img src="http://findicons.com/files/icons/727/leopard/128/skype.png"></a> or <a href="http://steamcommunity.com/id/partizanas/" target="_blank"><img src="http://www.freeiconspng.com/uploads/steam-logo-icon-7.png"></a> .</span>
-					<span style="padding-top: 3%; padding-left: 2%;">&copy; 2016 - 2017</span>
+					<span id="MAIN_SPAN_1">Contact with <a href="skype:modestas.lawyer"><img src="http://findicons.com/files/icons/727/leopard/128/skype.png"></a> or <a href="http://steamcommunity.com/id/partizanas/" target="_blank"><img src="http://www.freeiconspng.com/uploads/steam-logo-icon-7.png"></a> .</span>
+					<span id="MAIN_SPAN_2">&copy; 2016 - 2017</span>
 				</footer>
 			</div>
 		</div>
