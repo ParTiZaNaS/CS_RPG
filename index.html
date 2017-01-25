@@ -114,7 +114,7 @@
 				}
 				.MAIN ul li {
 					display: inline-block;
-					width: 30%;
+					width: 25%;
 					max-width: 350px;
 				}
 				.MAIN ul li img {
@@ -326,16 +326,47 @@
 	</head>
 
 	<body onload="Funkcija()">
-
 		<div class="container" id="Kraunama">
 			<div class="ball"></div>
 			<div class="ball1"></div>
 		</div>
+		
+		<!-- // ParTiZaNaS // -- --------------------------------------------------------------------------------------------------------- -->
+		
+		<div id="Pirmasis" class="animate-bottom tabcontent">
+			<div class="MAIN">
+				<ul>
+					<li>
+						<img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/_ParT__BOOK.png?raw=true" onclick="_WINDOW__OPEN(event, 'RPG')">
+						<h3 onclick="_WINDOW__OPEN(event, 'RPG')">RPG</h3>
+						<p>You think you're smart enough to learn from The Sacred book?</p>						
+					</li>
+					<li style="margin-left: 3%;">
+						<img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/_ParT__PAPER.png?raw=true" onclick="_WINDOW__OPEN(event, 'RPG')">
+						<h3 onclick="_WINDOW__OPEN(event, 'RPG')">Quests</h3>
+						<p>Endless adventures that await you will help you grow stronger..</p>					
+					</li>
+					<li style="margin-left: 3%; margin-right: 3%;">
+						<img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/_ParT__BAG.png?raw=true" onclick="_WINDOW__OPEN(event, 'RPG')">
+						<h3 onclick="_WINDOW__OPEN(event, 'RPG')">Story</h3>
+						<p>Gain armor, get stronger, kill monsters, live longer..</p>
+					</li>
+				</ul>
+				
+				<footer> 
+					<span>Design by. <a href="https://laikiux.lt/members/partizanas.15/" target="_blank">ParTiZaNaS</a></span>
+					<span id="MAIN_SPAN_1">Contact with <a href="skype:modestas.lawyer"><img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/contact/_contact_SKYPE.png?raw=true"></a> or <a href="http://steamcommunity.com/id/partizanas/" target="_blank"><img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/contact/_contact__STEAM.png?raw=true"></a> .</span>
+					<span id="MAIN_SPAN_2">&copy; 2016 - 2017</span>
+				</footer>
+			</div>
+		</div>
+		
+		<!-- // ParTiZaNaS // -- --------------------------------------------------------------------------------------------------------- -->
 
 		<div id="RPG" class="animate-bottom tabcontent">
 			<div id="cssmenu"><div id="menu-button">Menu</div>
 				<ul>
-					<li><a onclick="openCity(event, 'Pirmasis')">Namai</a></li>
+					<li><a onclick="_WINDOW__OPEN(event, 'Pirmasis')">Namai</a></li>
 		
 					<li class="active has-sub"><span class="submenu-button"></span><a href="#">Produktai</a>
 						<ul>
@@ -361,35 +392,6 @@
 			</div>
 		</div>
 
-		<div id="Pirmasis" class="animate-bottom tabcontent">
-		
-			<div class="MAIN">
-				<ul>
-					<li>
-						<img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/_ParT__BOOK.png?raw=true" onclick="openCity(event, 'RPG')">
-						<h3 onclick="openCity(event, 'RPG')">RPG</h3>
-						<p>You think you're smart enough to learn from The Sacred book?</p>						
-					</li>
-					<li style="margin-left: 3%;">
-						<img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/_ParT__PAPER.png?raw=true" onclick="openCity(event, 'RPG')">
-						<h3 onclick="openCity(event, 'RPG')">Quests</h3>
-						<p>Endless adventures that await you will help you grow stronger..</p>					
-					</li>
-					<li style="margin-left: 3%; margin-right: 3%;">
-						<img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/_ParT__BAG.png?raw=true" onclick="openCity(event, 'RPG')">
-						<h3 onclick="openCity(event, 'RPG')">Story</h3>
-						<p>Gain armor, get stronger, kill monsters, live longer..</p>
-					</li>
-				</ul>
-				
-				<footer> 
-					<span>Design by. <a href="https://laikiux.lt/members/partizanas.15/" target="_blank">ParTiZaNaS</a></span>
-					<span id="MAIN_SPAN_1">Contact with <a href="skype:modestas.lawyer"><img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/contact/_contact_SKYPE.png?raw=true"></a> or <a href="http://steamcommunity.com/id/partizanas/" target="_blank"><img src="https://github.com/ParTiZaNaS/RPG/blob/gh-pages/IMAGES/contact/_contact__STEAM.png?raw=true"></a> .</span>
-					<span id="MAIN_SPAN_2">&copy; 2016 - 2017</span>
-				</footer>
-			</div>
-		</div>
-
 		<script type="text/javascript">
 			var Laikas;
 
@@ -399,7 +401,7 @@
 				document.getElementById( "Pirmasis" ).style.display = "block";
 			}
 			
-			function openCity(evt, cityName) {
+			function _WINDOW__OPEN(evt, Dokumentas) {
 				var i, tabcontent, tablinks;
 
 				tabcontent = document.getElementsByClassName("tabcontent");
@@ -408,11 +410,10 @@
 				tablinks = document.getElementsByClassName("tablinks");
 				for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
 
-				document.getElementById(cityName).style.display = "block";
+				document.getElementById(Dokumentas).style.display = "block";
 				evt.currentTarget.className += " active";
 			}
-
-			//document.getElementById("defaultOpen").click();
+			//document.getElementById("RPG").click();
 			
 			
 			//Disable right click script
