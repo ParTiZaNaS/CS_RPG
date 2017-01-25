@@ -4,8 +4,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/40qflwnx2da267t/Navigation.css?dl=0">
-		
-		<link rel="stylesheet" href="https://dl.dropbox.com/s/9aav79t8vju0i0r/_MAIN__.css?dl=0">
 
 		<meta name="author" content="ParTiZaNaS">
 		<title>ParTiZaNaS</title>
@@ -103,47 +101,9 @@
 			.tabcontent {
 				display: none;
 			}
-		</style>
-	</head>
-
-	<body onload="Funkcija()">
-
-		<div class="container" id="Kraunama">
-			<div class="ball"></div>
-			<div class="ball1"></div>
-		</div>
-
-		<div id="RPG" class="animate-bottom tabcontent">
-			<div id="cssmenu"><div id="menu-button">Menu</div>
-				<ul>
-					<li><a onclick="openCity(event, 'Pirmasis')">Namai</a></li>
-		
-					<li class="active has-sub"><span class="submenu-button"></span><a href="#">Produktai</a>
-						<ul>
-							<li class="has-sub"><span class="submenu-button"></span><a href="#">Produktas 1</a>
-								<ul>
-									<li><a href="#">ParTiZaNaS</a></li>
-									<li><a href="#">Modestas</a></li>
-								</ul>
-							</li>
-				
-							<li class="has-sub"><span class="submenu-button"></span><a href="#">Produktas 2</a>
-								<ul>
-									<li><a href="#">Modestas</a></li>
-									<li><a href="#">ParTiZaNaS</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-		
-					<li><a href="#">Plačiau</a></li>
-					<li><a href="#">Kontaktai</a></li>
-				</ul>
-			</div>
-		</div>
-		
-  		<style>
-			@media screen and (min-width: 1px) {
+			
+			
+			@media screen and (max-width: 1080px) {
 				.MAIN {
 					background: #0f0f0f;
 					position: fixed;
@@ -225,7 +185,7 @@
 				#MAIN_SPAN_1 { padding-top: 1%; }
 				#MAIN_SPAN_2 { padding-top: 2%; padding-left: 0%; }
 			}
-			@media screen and (min-width: 1080px) {
+			@media screen and (min-width: 1081px) {
 				.MAIN {
 					background: #0f0f0f;
 					position: fixed;
@@ -236,7 +196,7 @@
 					width: 100%;
 				}
 				.MAIN ul {
-					margin-top: 5%;
+					margin-top: 1%;
 					padding: 0;
 					text-align:center;
 				}
@@ -252,8 +212,11 @@
 					
 					-webkit-backface-visibility: hidden;
 					
-					-webkit-filter: grayscale(100%);
-							filter: grayscale(100%);
+     				-webkit-filter: grayscale(100%);
+					   -moz-filter: grayscale(100%);
+						 -o-filter: grayscale(100%);
+						-ms-filter: grayscale(100%);
+							filter: grayscale(100%); 
 							
 					-webkit-transition: all 2s ease;
 					   -moz-transition: all 2s ease;
@@ -268,12 +231,17 @@
 					
 					-webkit-backface-visibility: hidden;
 					
-					-webkit-transform: rotate(22deg) scale(1.0, 1.0);
-						-ms-transform: rotate(22deg) scale(1.0, 1.0);
-							transform: rotate(22deg) scale(1.0, 1.0);
+					-webkit-transform: rotate(10deg) scale(1.0, 1.0);
+					   -moz-transform: rotate(10deg) scale(1.0, 1.0);
+						 -o-transform: rotate(10deg) scale(1.0, 1.0);
+						-ms-transform: rotate(10deg) scale(1.0, 1.0);
+							transform: rotate(10deg) scale(1.0, 1.0);
 							
-					-webkit-filter: grayscale(0%);
-							filter: grayscale(0%);
+     				-webkit-filter: grayscale(0%);
+					   -moz-filter: grayscale(0%);
+						 -o-filter: grayscale(0%);
+						-ms-filter: grayscale(0%);
+							filter: grayscale(0%); 
 							
 					-webkit-transition: all 0.9s ease;
 					   -moz-transition: all 0.9s ease;
@@ -282,7 +250,7 @@
 							transition: all 0.9s ease;
 							
 					border-radius: 200px;
-					border: 0px solid;
+					border: 0px;
 				}
 				.MAIN ul li h3 {
 					font-family: 'Beyond Wonderland';
@@ -292,7 +260,7 @@
 					font-weight: 900;
 					font-size: 350%;
 					color: #454545;
-					margin-top: 5px;
+					margin-top: 10px;
 					margin-bottom: 5px;
 	  
 					letter-spacing: 3px;
@@ -365,23 +333,60 @@
 				#MAIN_SPAN_2 { padding-top: 3%; padding-left: 2%; }
 			}
 		</style>
+	</head>
+
+	<body onload="Funkcija()">
+
+		<div class="container" id="Kraunama">
+			<div class="ball"></div>
+			<div class="ball1"></div>
+		</div>
+
+		<div id="RPG" class="animate-bottom tabcontent">
+			<div id="cssmenu"><div id="menu-button">Menu</div>
+				<ul>
+					<li><a onclick="openCity(event, 'Pirmasis')">Namai</a></li>
+		
+					<li class="active has-sub"><span class="submenu-button"></span><a href="#">Produktai</a>
+						<ul>
+							<li class="has-sub"><span class="submenu-button"></span><a href="#">Produktas 1</a>
+								<ul>
+									<li><a href="#">ParTiZaNaS</a></li>
+									<li><a href="#">Modestas</a></li>
+								</ul>
+							</li>
+				
+							<li class="has-sub"><span class="submenu-button"></span><a href="#">Produktas 2</a>
+								<ul>
+									<li><a href="#">Modestas</a></li>
+									<li><a href="#">ParTiZaNaS</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+		
+					<li><a href="#">Plačiau</a></li>
+					<li><a href="#">Kontaktai</a></li>
+				</ul>
+			</div>
+		</div>
 
 		<div id="Pirmasis" class="animate-bottom tabcontent">
 		
 			<div class="MAIN">
 				<ul>
 					<li>
-						<img class="rotate" src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__BOOK.png" onclick="openCity(event, 'RPG')">
+						<img src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__BOOK.png" onclick="openCity(event, 'RPG')">
 						<h3 onclick="openCity(event, 'RPG')">RPG</h3>
-						<p>You think you're smart enough to learn The Sacred book?</p>						
+						<p>You think you're smart enough to learn from The Sacred book?</p>						
 					</li>
-					<li>
-						<img class="rotate" src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__PAPER.png" onclick="openCity(event, 'RPG')">
+					<li style="margin-left: 2%;">
+						<img src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__PAPER.png" onclick="openCity(event, 'RPG')">
 						<h3 onclick="openCity(event, 'RPG')">Quests</h3>
 						<p>Endless adventures that await you will help you grow stronger..</p>					
 					</li>
-					<li>
-						<img class="rotate" src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__BAG.png" onclick="openCity(event, 'RPG')">
+					<li style="margin-left: 2%;">
+						<img src="https://raw.githubusercontent.com/ParTiZaNaS/RPG/gh-pages/IMAGES/_ParT__BAG.png" onclick="openCity(event, 'RPG')">
 						<h3 onclick="openCity(event, 'RPG')">Story</h3>
 						<p>Gain armor, get stronger, kill monsters, live longer..</p>
 					</li>
