@@ -3,6 +3,7 @@
 	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
+		<link rel="stylesheet" type="text/css" href="https://dl.dropbox.com/s/w63gmjj1hoyrni7/Forumas.css?dl=0">
 		<link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/40qflwnx2da267t/Navigation.css?dl=0">
 
 		<meta name="author" content="ParTiZaNaS">
@@ -27,7 +28,68 @@
 				user-select: none;
 				
 				cursor:default;
+				
+				font-family: 'Trebuchet MS',Helvetica,Arial,sans-serif;
+				color: rgb(166,166,166);
+				word-wrap: break-word;
+				line-height: 1.28;
 			}
+			
+#ribbon {
+		float: right;
+		padding: .34em 1em;
+		margin-right: -11px;
+		position:relative;
+		color: #fff;
+		font-weight: bold;
+		font: 15px;
+		text-align: center;
+		letter-spacing:0.1em;
+		box-shadow: inset 0px 1px 0px rgba(255,255,255,.3),
+					inset 0px 0px 20px rgba(0,0,0,0.1),
+					0px 1px 1px rgba(0,0,0,0.4);
+		 background: -webkit-linear-gradient(top,#e60000, #b30000);
+      display: inline-block;
+	}
+	
+#ribbon:before{
+		content: "";
+		width:.2em;
+		bottom:-.5em;
+		position:absolute;
+		display:block;
+		border: .9em solid #e60000;
+		box-shadow:0px 1px 0px rgba(0,0,0,0.4);
+		z-index:1;
+	}
+	
+#ribbon:before {
+		left:-1.35em;
+		border-right-width: .75em;
+		border-left-color:transparent;
+	}
+
+	
+#content:before {
+		content:"";
+		bottom:-.5em;
+		position:absolute;
+		display:block;
+		border-style:solid;
+		border-color: #330000 transparent transparent transparent;
+		z-index:2;
+	}
+	
+#content:before {
+	  left: 0;
+	  border-width: .5em 0 0 .5em;
+	}
+	
+@media screen and (max-width: 1100px) {
+	#ribbon { display:none }
+	#ribbon:before { display:none }
+	#content:before { display:none }
+}
 
 			.container { margin: 15% auto; }
 
@@ -322,6 +384,10 @@
 				#MAIN_SPAN_1 { padding-top: 1%; }
 				#MAIN_SPAN_2 { padding-top: 3%; padding-left: 2%; }
 			}
+			
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; background-color: rgb(11, 11, 11); }
+::-webkit-scrollbar { width: 12px; background-color: rgb(11, 11, 11); }
+::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); background-color: rgb(166,166,166); }
 		</style>
 	</head>
 
@@ -390,6 +456,203 @@
 					<li><a href="#">Kontaktai</a></li>
 				</ul>
 			</div>
+			
+			<div class="Forumas">
+				<div class="Pranesimas">
+					<div id="ribbon">
+						<span id="content">NEW</span>
+					</div>
+					<div class="Vartotojas">
+						<div class="Vartotojas_Laukelis">
+							<div class="Paveikslelis">
+								<img id="Paveikslelis_stilius" src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593">
+							</div>
+							<div class="Informacija">
+								<a class="ParTiZaNaS" id="Administratorius" href="https://laikiux.lt/members/partizanas.15/" target="_blank" style="text-decoration:none;" >ParTiZaNaS</a>
+								<div class="Developer">Developer</div>
+								<div class="TAG SAVININKAS">
+									<strong>Amx Mod X</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] RPG DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Jailbreak DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Base Builder DEV</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Tekstas">
+						<div class="Zinute">
+							<p/>Information website created.
+						</div>
+						<div class="Parasas"></div>
+						<div class="Laikas_dezute">
+							<div class="Laikas">
+								<span>ParTiZaNaS, 2016.11.19</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Pranesimas">
+					<div class="Vartotojas">
+						<div class="Vartotojas_Laukelis">
+							<div class="Paveikslelis">
+								<img id="Paveikslelis_stilius" src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593">
+							</div>
+							<div class="Informacija">
+								<a class="ParTiZaNaS" id="Administratorius" href="https://laikiux.lt/members/partizanas.15/" target="_blank" style="text-decoration:none;" >ParTiZaNaS</a>
+								<div class="Developer">Developer</div>
+								<div class="TAG SAVININKAS">
+									<strong>Amx Mod X</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] RPG DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Jailbreak DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Base Builder DEV</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Tekstas">
+						<div class="Zinute">
+							<!-- <img src="https://raw.githubusercontent.com/ParTiZaNaS/CS_RPG/gh-pages/RPG_MAP_3.png" alt="RPG_MAP_3" style="padding-left:10%;width:105px;height:105px;"> -->
+							
+							<p/>The new map "Ice.." was started to build.
+							<p/>Map iditenfication logos were added.
+							<br/><br/>
+
+							<p/>New improved textures.
+							<br/>
+						</div>
+						<div class="Parasas"></div>
+						<div class="Laikas_dezute">
+							<div class="Laikas">
+								<span>ParTiZaNaS, 2016.11.15</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Pranesimas">
+					<div class="Vartotojas">
+						<div class="Vartotojas_Laukelis">
+							<div class="Paveikslelis">
+								<img id="Paveikslelis_stilius" src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593">
+							</div>
+							<div class="Informacija">
+								<a class="ParTiZaNaS" id="Administratorius" href="https://laikiux.lt/members/partizanas.15/" target="_blank" style="text-decoration:none;" >ParTiZaNaS</a>
+								<div class="Developer">Developer</div>
+								<div class="TAG SAVININKAS">
+									<strong>Amx Mod X</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] RPG DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Jailbreak DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Base Builder DEV</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Tekstas">
+						<div class="Zinute">
+							<!-- <img src="https://raw.githubusercontent.com/ParTiZaNaS/CS_RPG/gh-pages/RPG_MAP_2.png" alt="RPG_MAP_2" style="padding-left:10%;width:105px;height:105px;"> -->
+							
+							<p/>The new map "Scorching Desert" was finished and added.
+							<p/>Map iditenfication logos were added.
+							<br/><br/>
+
+							<p/>New improved textures.
+							<br/><br/>
+
+							<p/>New underground caverns and oasis were added.
+							<p/>Improved boss location.
+							<p/>Portals were added.
+							<br/><br/>
+
+							<p/>The new monster "Sand snake" was added.
+							<p/>The new monster "Spamaton" was added.
+							<br/>
+						</div>
+						<div class="Parasas"></div>
+						<div class="Laikas_dezute">
+							<div class="Laikas">
+								<span>ParTiZaNaS, 2016.11.04</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="Pranesimas">
+					<div class="Vartotojas">
+						<div class="Vartotojas_Laukelis">
+							<div class="Paveikslelis">
+								<img id="Paveikslelis_stilius" src="http://www.laikiux.lt/data/avatars/m/0/15.jpg?1453807593">
+							</div>
+							<div class="Informacija">
+								<a class="ParTiZaNaS" id="Administratorius" href="https://laikiux.lt/members/partizanas.15/" target="_blank" style="text-decoration:none;">ParTiZaNaS</a>
+								<div class="Developer">Developer</div>
+								<div class="TAG SAVININKAS">
+									<strong>Amx Mod X</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] RPG DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Jailbreak DEV</strong>
+								</div>
+								<div class="TAG ADMIN KRASTAI">
+									<strong>[CS 1.6] Base Builder DEV</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Tekstas">
+						<div class="Zinute">
+							<!-- <img src="https://raw.githubusercontent.com/ParTiZaNaS/CS_RPG/gh-pages/RPG_MAP_1.png" alt="RPG_MAP_1" style="padding-left:10%;width:105px;height:105px;"> -->
+							
+							<p/>The new map "Forest of Despair" was finished and added.
+							<p/>Map iditenfication logos were added.
+							<br/><br/>
+
+							<p/>New improved textures.
+							<br/><br/>
+
+							<p/>New underground caverns with an additional boss room.
+							<p/>Portals were added.
+							<br/><br/>
+							
+							<p/>The new monster "Pantherhorn" was added.
+							<p/>The new monster "Bugzard" was added.
+							<p/>The new monster "Dire Dino" was added.
+							<br/>
+						</div>
+						<div class="Parasas"></div>
+						<div class="Laikas_dezute">
+							<div class="Laikas">
+								<span>ParTiZaNaS, 2016.10.23</span>
+							</div>
+						</div>
+						<div class="Patiko">
+							<!-- <span class="LIKE"><a id="LIKE_Vartotojas" href="https://laikiux.lt/members/draftas.145/" target="_blank" style="text-decoration:none;">DRaFTaS</a>, <a id="LIKE_Vartotojas">Madcat</a>, <a id="LIKE_Vartotojas">wOOw</a> ir <a id="LIKE_Vartotojas">17 kitų</a> pasidalino šiuo straipsniu.</span> -->
+							<span class="LIKE"><a id="LIKE_Vartotojas" href="https://laikiux.lt/members/likimas.397/" target="_blank" style="text-decoration:none;">LikiMas</a> like it.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 
 		<script type="text/javascript">
